@@ -1,6 +1,7 @@
 package com.revature.web;
 
 import java.io.IOException;
+import java.time.LocalDateTime;
 import java.util.Collections;
 
 import javax.servlet.ServletException;
@@ -24,7 +25,7 @@ public class DemoServlet extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		resp.setContentType("application/json");
-		resp.getOutputStream().write(mapper.writeValueAsBytes(Collections.singletonMap("message", "Hello, World!")));
+		resp.getOutputStream().write(mapper.writeValueAsBytes(Collections.singletonMap("message", "Hello, World! It is " + LocalDateTime.now())));
 	}
 
 }
