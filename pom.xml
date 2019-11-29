@@ -53,20 +53,5 @@
 	</dependencies>
 	<build>
 		<finalName>PipelineDemoApplication</finalName>
-		<pluginManagement>
-			<plugins>
-				<plugin>
-					<groupId>org.apache.tomcat.maven</groupId>
-					<artifactId>tomcat7-maven-plugin</artifactId>
-					<version>2.0</version>
-					<configuration>
-						<url>http://localhost:9000/manager/text</url>
-						<update>true</update>
-						<server>pipeline</server>
-						<path>/PipelineDemoApplication</path>
-					</configuration>
-				</plugin>
-			</plugins>
-		</pluginManagement>
 	</build>
 </project>
